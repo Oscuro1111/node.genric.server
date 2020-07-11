@@ -4,32 +4,52 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('node.genric.server:server');
-var http = require('http');
+var app = require("../app");
+var debug = require("debug")("node.genric.server:server");
+var http = require("http");
 
+var next = require("next");
+var { parse } = require("url");
+var nextApp = next({ dev: process.env.NODE_ENV !== "production" });
+const handle_ = nextApp.getRequestHandler();
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+var port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
-
+nextApp.prepare().then(() => {
+  
+  
+  var server = http.createServer((req, res) => {
+     const parsedUrl = parse(req.url, true);
+     handle_(req, res, parsedUrl);
+});
+  
+  //const server  = http.createServer(app);
+  server.listen(port, function () {
+    console.log(server.address());
+  });
+  server.on("error", onError);
+  server.on("listening", onListening);
+  
 /**
- * Listen on provided port, on all network interfaces.
+ * Event listener for HTTP server "listening" event.
  */
 
-server.listen(port,()=>{
-  console.log(`localhost:${port} is runing!`)
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+  debug("Listening on " + bind);
+}
+  
 });
-server.on('error', onError);
-server.on('listening', onListening);
+
 
 /**
  * Normalize a port into a number, string, or false.
@@ -56,22 +76,20 @@ function normalizePort(val) {
  */
 
 function onError(error) {
-  if (error.syscall !== 'listen') {
+  if (error.syscall !== "listen") {
     throw error;
   }
 
-  var bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+  var bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
-    case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
       process.exit(1);
       break;
-    case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
       process.exit(1);
       break;
     default:
@@ -79,14 +97,3 @@ function onError(error) {
   }
 }
 
-/**
- * Event listener for HTTP server "listening" event.
- */
-
-function onListening() {
-  var addr = server.address();
-  var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
-  debug('Listening on ' + bind);
-}

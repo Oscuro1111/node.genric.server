@@ -1,0 +1,13 @@
+.navLayout{
+    width: 100vw;
+    height:8vh;
+    position: fixed;
+    background-color: rgb(33, 105, 200);
+}
+
+
+@media only screen  and (max-width:900px){
+    .navLayout{
+        height: 8vh;
+    }
+}

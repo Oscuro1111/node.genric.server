@@ -1,0 +1,39 @@
+.flexContainer{
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    background-color: cadetblue;
+}
+
+.contentBox{
+    display: flex;
+    margin-top: 8vh;
+    flex-direction: row;
+    background-color: darkmagenta;
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.mainBar{
+    flex-grow: 3;
+    background-color: lawngreen;
+}
+.sideBar{
+    flex-grow: 1;
+    background-color: lightpink;
+}
+
+@media only screen and (max-width:900px){
+    .contentBox{
+        flex-direction:column;
+        margin-top: 7vh;
+    }
+    .mainBar{
+        min-height:90vh;
+    }
+    .sideBar{
+        min-height: 20vh;
+    }
+}
