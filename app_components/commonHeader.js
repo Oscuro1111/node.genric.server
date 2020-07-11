@@ -12,7 +12,7 @@ export default function Master({children,thum,description}){
         <script src="/jquery/dist/jquery.js"></script>
         <script src="/popper.js/dist/popper.js"></script>
         <script src="/bootstrap/dist/js/bootstrap.js"></script>
-      
+        <script data-ad-client="ca-pub-4337835308913408" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <link
           rel="apple-touch-icon"
           sizes="57x57"
