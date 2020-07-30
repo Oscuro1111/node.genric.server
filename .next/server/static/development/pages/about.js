@@ -138,7 +138,7 @@ function About() {
     alt: "templatemo easy profile"
   }), __jsx("hr", null), __jsx("h1", {
     class: "tm-title bold shadow"
-  }, "Hi, I am Oscuro"), __jsx("h1", {
+  }, "Hi, I am Sahil"), __jsx("h1", {
     class: "white bold shadow"
   }, "Developer"))))), __jsx("section", {
     class: "container"
@@ -150,7 +150,7 @@ function About() {
     class: "about"
   }, __jsx("h3", {
     class: "accent"
-  }, "About Me"), __jsx("p", null, "This is my personal blog.I am web developer and like to work on backend."))), __jsx("div", {
+  }, "About Me"), __jsx("p", null, "This is my personal blog.I am web developer and like to work on projects and backand tech."))), __jsx("div", {
     class: "col-md-6 col-sm-12"
   }, __jsx("div", {
     class: "skills"
@@ -172,6 +172,19 @@ function About() {
   })), __jsx("strong", null, "React"), __jsx("span", {
     class: "pull-right"
   }, "50%"), __jsx("div", {
+    class: "progress"
+  }, __jsx("div", {
+    class: "progress-bar progress-bar-primary",
+    role: "progressbar",
+    "aria-valuenow": "85",
+    "aria-valuemin": "0",
+    "aria-valuemax": "100",
+    style: {
+      width: "85%"
+    }
+  })), __jsx("strong", null, "Javascript"), __jsx("span", {
+    class: "pull-right"
+  }, "90%"), __jsx("div", {
     class: "progress"
   }, __jsx("div", {
     class: "progress-bar progress-bar-primary",
@@ -229,7 +242,7 @@ function About() {
     class: "fa fa-map-marker"
   }), "India ,HP"), __jsx("p", null, __jsx("i", {
     class: "fa fa-envelope"
-  }), " nanotiksmith@gmail.com"), __jsx("p", null, __jsx("i", {
+  }), " sahiljarial1999@gmail.com"), __jsx("p", null, __jsx("i", {
     class: "fa fa-globe"
   }), "www.tech-inventory.com"))), __jsx("div", {
     class: "col-md-8 col-sm-12"
@@ -243,6 +256,9 @@ function About() {
     class: "experience-title accent"
   }, "Website Development"), __jsx("h5", null, "2019 Feb - current"))))), __jsx("div", {
     onClick: e => location.assign("/"),
+    style: {
+      "font-size": "30px"
+    },
     className: "btn btn-primary"
   }, "Back")), __jsx("footer", null, __jsx("div", {
     class: "container"
@@ -281,7 +297,7 @@ function About() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! F:\web.projects\node.server\projects\node.genric.server\pages\about\index.js */"./pages/about/index.js");
+module.exports = __webpack_require__(/*! F:\web.projects\node.genric.server\pages\about\index.js */"./pages/about/index.js");
 
 
 /***/ }),

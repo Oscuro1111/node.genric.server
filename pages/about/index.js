@@ -24,7 +24,7 @@ export default function About() {
                     alt="templatemo easy profile"
                   />
                   <hr />
-                  <h1 class="tm-title bold shadow">Hi, I am Oscuro</h1>
+                  <h1 class="tm-title bold shadow">Hi, I am Sahil</h1>
                   <h1 class="white bold shadow">Developer</h1>
                 </div>
               </div>
@@ -38,7 +38,7 @@ export default function About() {
                   <h3 class="accent">About Me</h3>
                   <p>
                     This is my personal blog.I am web developer and like to work
-                    on backend.
+                    on projects and backand tech.
                   </p>
                 </div>
               </div>
@@ -59,6 +59,18 @@ export default function About() {
                   </div>
                   <strong>React</strong>
                   <span class="pull-right">50%</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-primary"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style={{ width: "85%" }}
+                    ></div>
+                  </div>
+                  <strong>Javascript</strong>
+                  <span class="pull-right">90%</span>
                   <div class="progress">
                     <div
                       class="progress-bar progress-bar-primary"
@@ -127,7 +139,7 @@ export default function About() {
                   </p>
 
                   <p>
-                    <i class="fa fa-envelope"></i> nanotiksmith@gmail.com
+                    <i class="fa fa-envelope"></i> sahiljarial1999@gmail.com
                   </p>
                   <p>
                     <i class="fa fa-globe"></i>www.tech-inventory.com
@@ -146,7 +158,7 @@ export default function About() {
               </div>
             </div>
 
-            <div onClick={e=>location.assign("/")} className="btn btn-primary">Back</div>
+            <div onClick={e=>location.assign("/")}  style={{"font-size":"30px"}} className="btn btn-primary">Back</div>
           </section>
 
           <footer>
