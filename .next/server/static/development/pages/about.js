@@ -156,9 +156,9 @@ function About() {
     class: "skills"
   }, __jsx("h2", {
     class: "white"
-  }, "Skills"), __jsx("strong", null, "Nodejs"), __jsx("span", {
+  }, "Skills"), __jsx("strong", null, "Javascript"), __jsx("span", {
     class: "pull-right"
-  }, "70%"), __jsx("div", {
+  }, "95%"), __jsx("div", {
     class: "progress"
   }, __jsx("div", {
     class: "progress-bar progress-bar-primary",
@@ -171,7 +171,7 @@ function About() {
     }
   })), __jsx("strong", null, "React"), __jsx("span", {
     class: "pull-right"
-  }, "50%"), __jsx("div", {
+  }, "70%"), __jsx("div", {
     class: "progress"
   }, __jsx("div", {
     class: "progress-bar progress-bar-primary",
@@ -180,11 +180,11 @@ function About() {
     "aria-valuemin": "0",
     "aria-valuemax": "100",
     style: {
-      width: "85%"
+      width: "70%"
     }
-  })), __jsx("strong", null, "Javascript"), __jsx("span", {
+  })), __jsx("strong", null, "Nodejs"), __jsx("span", {
     class: "pull-right"
-  }, "90%"), __jsx("div", {
+  }, "80%"), __jsx("div", {
     class: "progress"
   }, __jsx("div", {
     class: "progress-bar progress-bar-primary",
@@ -193,11 +193,11 @@ function About() {
     "aria-valuemin": "0",
     "aria-valuemax": "100",
     style: {
-      width: "85%"
+      width: "80%"
     }
   })), __jsx("strong", null, "Bootstrap"), __jsx("span", {
     class: "pull-right"
-  }, "65%"), __jsx("div", {
+  }, "85%"), __jsx("div", {
     class: "progress"
   }, __jsx("div", {
     class: "progress-bar progress-bar-primary",
@@ -206,7 +206,7 @@ function About() {
     "aria-valuemin": "0",
     "aria-valuemax": "100",
     style: {
-      width: "95%"
+      width: "85%"
     }
   })))))), __jsx("section", {
     class: "container"
