@@ -10,6 +10,7 @@ var http = require("http");
 
 var next = require("next");
 var { parse } = require("url");
+//In production
 var nextApp = next({ dev: false });
 const handle_ = nextApp.getRequestHandler();
 /**
