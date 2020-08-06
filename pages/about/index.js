@@ -111,8 +111,9 @@ export default function About() {
                       <h5>2015 March - 2017 March</h5>
                     </div>
                     <p class="education-description">
-                      Studied Science And High school Mathematics. In Colleage
-                      Studied computer programming.
+                      Studied Science And high school Mathematics.
+                      Currentlty doing undergraduation in college under H.P.U .
+                      Studing computer programming and applications.
                     </p>
                   </div>
                 </div>
