@@ -1,0 +1,21 @@
+[
+   {
+      "name":"iPhone",
+      "description":"iPhone is the styllist phone.",
+      "price": 1000,
+      "image": "iphone.png"
+   },
+   {
+      "name": "Pixel",
+      "discription": "Pixel is the most featured phone",
+      "price":8000,
+      "image":"pixel.png"
+   }
+   ,
+   {
+      "name":"Laptop",
+      "description":"Laptop is the productive tool",
+      "price":20000,
+      "image":"laptop.png"
+   }
+]
