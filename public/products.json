@@ -7,7 +7,7 @@
    },
    {
       "name": "Pixel",
-      "discription": "Pixel is the most featured phone",
+      "description": "Pixel is the most featured phone",
       "price":8000,
       "image":"pixel.png"
    }
